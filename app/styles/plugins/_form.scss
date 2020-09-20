@@ -1,0 +1,10 @@
+@import './../variables.scss';
+@import './../functions.scss';
+
+.col-form-label {
+    color: $sc-text-active;
+    font-family: 'SFUIText-Semibold';
+    @include media-breakpoint-up(xs) {
+        padding-top: em(8px);
+    }
+}

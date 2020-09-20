@@ -1,0 +1,4 @@
+export const NAME = 'consultant'
+
+export const SET_CONSULTANT_TO_DISPLAY = 'SET_CONSULTANTS_TO_DISPLAY'
+export const SET_CONSULTANT_DETAILS = 'SET_CONSULTANT_DETAILS'

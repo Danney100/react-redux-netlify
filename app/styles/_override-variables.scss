@@ -1,0 +1,34 @@
+// Overrides bootstrap variables
+
+// Reboot
+$body-bg:                               #fcfaf9;
+
+// Card
+$card-border-width:                     0;
+
+// Buttons
+$input-btn-padding-y-lg:                0.5625rem; // 9px
+
+// Alert
+$alert-padding-y:                       1.25rem; // 20px
+
+// Inputs
+$input-color:                           $sc-text-content;
+$input-bg:                              #f7f7f7;
+$input-border-color:                    $input-bg;
+$input-group-addon-bg:                  $input-bg;
+$input-group-addon-border-color:        $input-bg;
+
+// Form
+$form-group-margin-bottom:              1.5625rem; // 25px
+
+// Table
+$table-border-color:        transparent;
+$table-accent-bg:           #fcfaf9;
+$table-hover-bg:            $table-accent-bg;
+$table-head-color:          $sc-text-active;
+$table-color:               $sc-text-content;
+
+// Tabs
+$nav-link-padding-y:                            1.0625rem; // 17px
+$nav-tabs-border-color:                         #ebe9e8;

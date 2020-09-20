@@ -1,0 +1,81 @@
+/*@import "~react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";*/
+
+@import './../variables.scss';
+@import './../functions.scss';
+
+// Override .th in Tables
+th {
+  font-size: $font-size-base;
+}
+
+.table {
+  th,
+  td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.table-hover tbody tr:hover {
+  color: darken($table-color, 50%);
+}
+
+.react-bootstrap-table th.sortable {
+  white-space: nowrap;
+}
+
+.react-bootstrap-table th,
+.react-bootstrap-table td {
+  vertical-align: middle !important;
+}
+
+.react-bootstrap-table .table:not(.table-bordered) tbody tr:last-child td {
+  border-bottom: 1px solid $table-border-color;
+}
+
+.react-bootstrap-table-pagination-list .pagination {
+  justify-content: flex-end;
+}
+
+.#{$p-pre}custom-search {
+  .sc-input.form-control {
+    padding-right: 3.5rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+
+  .sc-input--has-clear {
+    padding-right: 4rem;
+  }
+
+  .input-group-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: $sc-text-placeholder;
+    background-color: transparent;
+    border: 0;
+    z-index: 4;
+  }
+}
+
+.#{$p-pre}custom-search__clear-btn {
+  .input-group-append & {
+    position: absolute;
+    right: rem(35px);
+    padding: 0;
+    z-index: 4;
+  }
+}
+
+.react-bootstrap-table-pagination {
+  padding: 0 0.75rem;
+  flex-direction: row-reverse !important;
+  width: 100% !important;
+  margin-bottom: 5px !important;
+}
+
+.react-bootstrap-table-pagination-list .pagination {
+  justify-content: flex-start;
+}

@@ -1,0 +1,66 @@
+@import './../variables.scss';
+@import './../functions.scss';
+
+
+.#{$p-pre}nav-tabs {
+    border-bottom: 1px solid $nav-tabs-border-color;
+}
+
+.#{$p-pre}nav-tabs__item {
+    color: $sc-text-inactive;
+
+    &:not(:first-child) {
+        margin-left: rem(2px);
+    }
+
+    &:first-child {
+        .nav-link {
+            padding-left: 0;
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+    
+    &:last-child {
+        .nav-link {
+            padding-right: 0;
+            &::before {
+                right: 0;
+            }
+        }
+    }
+}
+.#{$p-pre}nav-tabs__link {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+        height: rem(5px);
+    }
+
+    &:hover {
+        &::before {
+            background-color: rgba($sc-text-active, 0.5);
+        }
+    }
+}
+
+    
+
+.#{$p-pre}nav-tabs__item--active {
+    color: $sc-text-active;
+    font-weight: 600;
+
+    .nav-link  {
+        &::before {
+            background-color: $sc-text-active;
+        }
+    }
+}

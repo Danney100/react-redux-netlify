@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="175" height="40" viewBox="0 0 175 40">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="175" height="40" fill="#27BFA3" rx="4"/>
+        <path fill="#FCFAF9" fill-rule="nonzero" d="M155.633 23.233l4.105-4.178c.256-.26.332-.652.194-.993-.139-.34-.465-.562-.827-.562h-8.21c-.362 0-.688.222-.827.562-.138.34-.062.733.194.993l4.105 4.178c.35.356.916.356 1.266 0z"/>
+        <path stroke="#FCFAF9" stroke-linecap="square" d="M134.5 0.5L134.5 39.5"/>
+        <g transform="translate(97 12)">
+            <rect width="22" height="15" fill="#FFF" rx="7.5"/>
+            <text fill="#27BFA3" font-family="SFUIText-Bold, SF UI Text" font-size="10" font-weight="bold">
+                <tspan x="5" y="12">12</tspan>
+            </text>
+        </g>
+        <path fill="#FFF" fill-rule="nonzero" d="M18.165 15.091h9.334c.361 0 .575.303.477.68l-1.372 5.288c-.098.376-.465.726-.825.783l-6.307.992c-.359.056-.725-.205-.817-.58l-1.096-4.446-1.006-3.596.51.491-1.525-.296c-.355-.07-.591-.438-.528-.823.064-.385.404-.642.759-.573l1.525.297.394.076.116.416.361 1.291zm1.579 10.986c-.632 0-1.144-.555-1.144-1.24 0-.685.512-1.24 1.144-1.24.63 0 1.143.555 1.143 1.24 0 .685-.512 1.24-1.143 1.24zm5.879 0c-.631 0-1.143-.555-1.143-1.24 0-.685.512-1.24 1.143-1.24s1.143.555 1.143 1.24c0 .685-.512 1.24-1.143 1.24z"/>
+        <text fill="#FFF" font-family="SFUIText-Heavy, SF UI Text" font-size="13" font-weight="600">
+            <tspan x="36" y="24">My Cart</tspan>
+        </text>
+    </g>
+</svg>

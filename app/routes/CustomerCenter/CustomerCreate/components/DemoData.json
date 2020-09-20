@@ -1,0 +1,43 @@
+{
+  "Name": {
+    "first_name": ["Dora"],
+    "last_name": ["Russell"],
+    "middle_name": ["Shane"],
+    "nick_name": ["Higgins"],
+    "company_name": ["Opakotsu Inc"]
+  },
+  "MailingAddress": {
+    "country": ["US"],
+    "street_1": ["1299 vive, Terrace"],
+    "street_2": ["Suite 222"],
+    "city": ["Uwuhasa"],
+    "state": ["FL"],
+    "postal_code": ["21788"],
+    "phone_number": ["433-347-1884"],
+    "validated": ["Yes"],
+    "residential": ["Yes"]
+  },
+  "ContactInfo": {
+    "email": ["drussell952@example.com"],
+    "phone_number": ["433-397-1884"]
+  },
+  "OtherInfo": {
+    "customer_type": ["Retail"],
+    "tax_exempt": ["No"],
+    "username": ["Dora952"],
+    "password": ["Dev12345!"],
+    "language": ["English"],
+    "customer_status": ["Active"]
+  },
+  "CreditCard": {
+    "name_on_card": ["Dora Russell"],
+    "card_number": ["4111111111111111"],
+    "country": ["United State"],
+    "street1": ["1299 Vivej Terrace"],
+    "street2": ["Suite 222"],
+    "city": ["Uwuhasa"],
+    "state": ["Florida"],
+    "postal_code": ["21788"],
+    "phone_number": ["433-397-1884"]
+  }
+}

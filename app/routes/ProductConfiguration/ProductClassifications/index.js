@@ -1,0 +1,3 @@
+import ProductClassificationManager from './ProductClassificationManager'
+
+export default ProductClassificationManager

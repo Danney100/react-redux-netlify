@@ -1,0 +1,41 @@
+{
+  "ContactInfo": {
+    "FirstName": ["Dora"],
+    "LastName": ["Russell"],
+    "LastName2": ["Shane"],
+    "CompanyName": ["Opakotsu Inc"],
+    "Email": ["MOrtega986@example.com"],
+    "HomePhone": ["3322039724"],
+    "CellPhone": ["3322039724"]
+  },
+  "AccountInfo": {
+    "UserName": ["Matilda986"],
+    "Password": ["Password"],
+    "ConfirmPassword": ["Password"]
+  },
+  "ShippingAddress": {
+    "NickName": ["Demo"],
+    "Firstname": ["Matilda"],
+    "Lastname": ["Ortega"],
+    "Company": [""],
+    "Country": ["United States"],
+    "Street1": ["508 Bopori Terrace"],
+    "Street2": [""],
+    "City": ["Jagibike"],
+    "State": ["Florida"],
+    "PostalCode": ["86937-____"],
+    "Phonenumber": ["332-203-9724"],
+    "Special Instructions": [""]
+  },
+  "PaymentInfo": {
+    "NameOnCard": ["Matilda Ortega"],
+    "CardNumber": ["4111111111111111"],
+    "Country": ["United State"],
+    "Street1": ["1299 Vivej Terrace"],
+    "Street2": ["Suite 222"],
+    "City": ["Uwuhasa"],
+    "State": ["Florida"],
+    "PostalCode": ["21788"],
+    "PhoneNumber": ["433-397-1884"]
+  }
+}

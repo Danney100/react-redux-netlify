@@ -1,0 +1,58 @@
+{
+  "Name": {
+    "FirstName": ["Dora"],
+    "LastName": ["Russell"],
+    "MiddleName": ["Shane"],
+    "NickName": ["Higgins"],
+    "jointFirstName": ["Lee"],
+    "jointLastName": ["Douglas"],
+    "jointMiddleName": ["Polly"],
+    "CompanyName": ["Opakotsu Inc"]
+  },
+  "DefaultMailingAddress": {
+    "Country": ["United State"],
+    "Street1": ["1299 vive, Terrace"],
+    "Street2": ["Suite 222"],
+    "City": ["Uwuhasa"],
+    "State": ["Florida"],
+    "PostalCode": ["21788"],
+    "PhoneNumber": ["433-347-1884"],
+    "Validated": ["Yes"],
+    "Residential": ["Yes"]
+  },
+  "ContactInfo": {
+    "Email": ["DRussell952@example.com"],
+    "PhoneNumber": ["433-397-1884"]
+  },
+  "Identification": {
+    "SSN": ["896-47-7974"],
+    "DLCountry": ["United States"],
+    "DLState": ["Florida"],
+    "Drivers": ["150563387"]
+  },
+  "OtherInfo": {
+    "ConsultantType": ["Consultant"],
+    "BusinessType": ["Individual"],
+    "TaxExempt": ["No"],
+    "Username": ["Dora952"],
+    "Password": ["Dev12345!"],
+    "ConfirmPassword": ["Dev12345!"],
+    "WebsiteURL": ["MRoberson743"],
+    "Language": ["English"],
+    "ConsultantStatus": ["Active"],
+    "Gender": ["Not Unknown"],
+    "BlockPortal": [""],
+    "BlockWebsite": [""]
+  },
+  "CreditCard": {
+    "NameOnCard": ["Dora Russell"],
+    "CardNumber": ["4111111111111111"],
+    "Country": ["United State"],
+    "Street1": ["1299 Vivej Terrace"],
+    "Street2": ["Suite 222"],
+    "City": ["Uwuhasa"],
+    "State": ["Florida"],
+    "PostalCode": ["21788"],
+    "PhoneNumber": ["433-397-1884"]
+  }
+}

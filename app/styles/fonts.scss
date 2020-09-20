@@ -1,0 +1,112 @@
+@font-face {
+  font-family: SFUIText-Medium;
+  src: local(SFUIText-Medium), url('../routes/font/SF-UI-Text-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: SFUIText-Semibold;
+  src: local(SFUIText-Semibold), url('../routes/font/SF-UI-Text-Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: DINCondensed-Bold;
+  src: local(DINCondensed-Bold), url('../routes/font/DIN-Condensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SFUIText-Heavy;
+  src: local(SFUIText-Heavy), url('../routes/font/SF-UI-Text-Heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: SFUIText-Bold;
+  src: local(SFUIText-Bold), url('../routes/font/SF-UI-Text-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Oswald-Medium;
+  src: local(Oswald-Medium), url('../routes/font/Oswald-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald-Regular;
+  src: local(Oswald-Regular), url('../routes/font/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Oswald-SemiBold;
+  src: local(Oswald-SemiBold), url('../routes/font/Oswald-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Medium;
+  src: local(Avenir-Medium), url('../routes/font/Avenir-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: local(Avenir-Roman), url('../routes/font/Avenir-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Heavy;
+  src: local(Avenir-Heavy), url('../routes/font/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Light;
+  src: local(Avenir-Light), url('../routes/font/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Avenir-Black;
+  src: local(Avenir-Light), url('../routes/font/Avenir-Black.ttf') format('truetype');
+}
+
+.#{$p-pre}sfui-text-medium {
+  font-family: 'SFUIText-Medium' !important;
+}
+
+.#{$p-pre}sfui-text-semibold {
+  font-family: 'SFUIText-Semibold' !important;
+}
+
+.#{$p-pre}sfui-text-heavy {
+  font-family: 'SFUIText-Heavy' !important;
+}
+
+.#{$p-pre}sfui-text-bold {
+  font-family: 'SFUIText-Bold' !important;
+}
+
+.#{$p-pre}avenir-light {
+  font-family: 'Avenir-Light';
+}
+
+.#{$p-pre}avenir-heavy {
+  font-family: 'Avenir-Heavy';
+}
+
+.#{$p-pre}avenir-black {
+  font-family: 'Avenir-Black';
+}
+
+.#{$p-pre}avenir-roman {
+  font-family: 'Avenir-Roman';
+}
+
+.#{$p-pre}avenir-medium {
+  font-family: 'Avenir-Medium';
+}
+
+.#{$p-pre}din-bold {
+  font-family: 'DINCondensed-Bold';
+}
+
+.#{$p-pre}oswald-semibold {
+  font-family: 'Oswald-SemiBold';
+}
+
+.#{$p-pre}oswald-regular {
+  font-family: 'Oswald-Regular';
+}

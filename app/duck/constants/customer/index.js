@@ -1,0 +1,4 @@
+export const NAME = 'customer'
+
+export const SET_CUSTOMER_TO_DISPLAY = 'SET_CUSTOMERS_TO_DISPLAY'
+export const SET_CUSTOMER_DETAILS = 'SET_CUSTOMER_DETAILS'

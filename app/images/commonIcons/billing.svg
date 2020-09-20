@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="40" viewBox="0 0 300 40">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="300" height="40" fill="#DE8B6D" rx="4"/>
+        <text fill="#FFF" font-family="SFUIText-Heavy, SF UI Text" font-size="13" font-weight="600">
+            <tspan x="45.627" y="24">Use Default Address For Billing</tspan>
+        </text>
+    </g>
+</svg>

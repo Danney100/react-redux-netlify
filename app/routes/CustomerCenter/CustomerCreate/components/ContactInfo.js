@@ -1,0 +1,241 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import {useSelector} from 'react-redux'
+import iconVector from 'images/commonIcons/vector.svg'
+import {Col, Card, Label, FormGroup, Input, Row, Button} from 'reactstrap'
+import {makeStyles} from '@material-ui/core/styles'
+
+const useStyles = makeStyles({
+  title: {
+    color: '#403839',
+    fontSize: 12,
+    fontFamily: 'SFUIText-Bold',
+  },
+  input: {
+    marginLeft: 24,
+    marginTop: 8,
+  },
+  name: {
+    fontFamily: 'DINCondensed-Bold',
+    fontSize: 22,
+    color: '#403839',
+    marginTop: 25,
+    marginLeft: 26,
+  },
+  border: {
+    borderRadius: 4,
+    marginRight: 26,
+  },
+  check: {
+    fontFamily: 'SFUIText-Semibold',
+    fontSize: 14,
+    color: '#de8b6d',
+    marginTop: 20,
+    marginBottom: 21,
+  },
+  buttonMargin: {
+    marginTop: 30,
+  },
+  buttonStyle: {
+    backgroundColor: '#6C6766 !important',
+    borderColor: '#6C6766 !important',
+    fontFamily: 'SFUIText-Heavy',
+    fontSize: 14,
+    color: '#ffffff',
+    width: 100,
+    height: 40,
+  },
+  primary: {
+    fontFamily: 'SFUIText-Semibold',
+    fontSize: 14,
+    color: '#de8b6d',
+  },
+  radiusButton: {
+    borderRadius: 100,
+    width: 83,
+    backgroundColor: '#e6e0dd !important',
+  },
+  home: {
+    fontFamily: 'SFUIText-Medium',
+    fontSize: 14,
+    color: '#6c6766',
+    marginLeft: 10,
+  },
+  phone: {
+    fontFamily: 'SFUIText-Medium',
+    fontSize: 14,
+    width: 155,
+    color: '#6c6766',
+  },
+  content: {
+    fontFamily: 'SFUIText-Medium',
+    fontSize: 14,
+    color: '#6c6766',
+  },
+})
+
+const ContactInfo = (props) => {
+  const {register, errors, demoTrigger, DemoData, editData} = props
+  const data = useSelector(({customer}) => customer.get('customerDetails').toJS())
+  const classes = useStyles()
+  return (
+    <Card className="mb-3">
+      <div tag="h5" className="mb-0">
+        <p className={`${classes.name} mb-0`}>Contact Information</p>
+      </div>
+      <hr className={`${classes.border} mx-4 mt-2`} />
+      <div>
+        <Row form>
+          <Col md={{size: 4, offset: 2}}>
+            <FormGroup className="mr-md-5 mx-3 mt-3">
+              <Label className={classes.title}>Email*</Label>
+              <Input
+                type="text"
+                name="email"
+                defaultValue={
+                  demoTrigger ? DemoData.email[0] :
+                  editData ? data.email : ''
+                }
+                innerRef={register({
+                  required: 'This field is required.',
+                  pattern: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+                })}
+              />
+              {errors.email && errors.email.type === 'required' && (
+                <span className="text-danger">{errors.email.message}</span>
+              )}
+              {errors.email && errors.email.type === 'pattern' && (
+                <span className="text-danger">Invalid email</span>
+              )}
+            </FormGroup>
+          </Col>
+        </Row>
+        <Row form>
+          <Col md={{size: 4, offset: 2}}>
+            <FormGroup className="mx-4">
+              <Col className={classes.check}>
+                <Input type="checkbox" name="is_company_emails" innerRef={register} defaultChecked={editData ? data.is_company_emails : ''}/> Opt-Out of
+                Company Emails
+              </Col>
+            </FormGroup>
+          </Col>
+          <Col md={{size: 4}}>
+            <FormGroup className="mx-4">
+              <Col className={classes.check}>
+                <Input type="checkbox" name="is_consultant_emails" innerRef={register} defaultChecked={editData ? data.is_consultant_emails : ''}/> Opt-Out of
+                Consultant Emails
+              </Col>
+            </FormGroup>
+          </Col>
+        </Row>
+        <Row className="mx-1 my-2">
+          <Col md={{size: 3, offset: 2}}>
+            <FormGroup>
+              <Label className={classes.title}>Phone Number*</Label>
+              <Input
+                className={classes.content}
+                type="select"
+                name="is_number_of"
+                placeholder=""
+                innerRef={register}>
+                <option>Home</option>
+                <option>Work</option>
+                <option>Cellular</option>
+                <option>Fax</option>
+              </Input>
+            </FormGroup>
+          </Col>
+          <Col md={4}>
+            <FormGroup className="mt-2">
+              <Label className={classes.title}></Label>
+              <Input />
+            </FormGroup>
+          </Col>
+          <Col className={classes.buttonMargin}>
+            <Button className={classes.buttonStyle}>Add</Button>
+          </Col>
+        </Row>
+        <Row form>
+          <Col md={{size: 4, offset: 2}}>
+            <FormGroup className="mx-4">
+              <Col>
+                <Input type="radio" name="primary" placeholder="" innerRef={register} />
+                <span className={classes.primary}>Primary</span>
+              </Col>
+            </FormGroup>
+          </Col>
+          <Col md={{size: 4}}>
+            <FormGroup className="mx-4">
+              <Col>
+                <Input type="radio" name="primary" placeholder="" />
+                <span className={classes.primary}>Not Primary</span>
+              </Col>
+            </FormGroup>
+          </Col>
+        </Row>
+        <Col sm={{size: 10, offset: 2}}>
+          <Row>
+            <Col sm="1" className="mb-1">
+              <Button color="light" className="rounded-circle ">
+                <img className="sc-btn-action__img " src={iconVector} />
+              </Button>
+            </Col>
+            <Col sm="3">
+              <FormGroup>
+                <Input type="text" defaultValue="Home" readOnly={true} className={classes.home} />
+              </FormGroup>
+            </Col>
+            <Col sm="3">
+              <FormGroup>
+                <Input type="text" defaultValue="972-876-9292" readOnly={true} className={classes.phone} />
+              </FormGroup>
+            </Col>
+            <Col sm={2}>
+              <FormGroup className={classes.home}>
+                <Input
+                  type="text"
+                  defaultValue="primary"
+                  name="select"
+                  id="exampleSelect"
+                  className={classes.radiusButton}
+                />
+              </FormGroup>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col sm="1" className="mb-1">
+              <Button color="light" className="rounded-circle ">
+                <img className="sc-btn-action__img " src={iconVector} />
+              </Button>
+            </Col>
+            <Col sm="3">
+              <FormGroup>
+                <Input type="text" defaultValue="Home" readOnly={true} className={classes.home} />
+              </FormGroup>
+            </Col>
+            <Col sm="3">
+              <FormGroup>
+                <Input
+                  type="text"
+                  name="phone"
+                  defaultValue=""
+                  innerRef={register}
+                  className={classes.phone}></Input>
+              </FormGroup>
+            </Col>
+          </Row>
+        </Col>
+      </div>
+    </Card>
+  )
+}
+
+ContactInfo.propTypes = {
+  demoTrigger: PropTypes.bool,
+  DemoData: PropTypes.object,
+  errors: PropTypes.object,
+  register: PropTypes.func,
+  editData: PropTypes.bool,
+}
+
+export default ContactInfo
